@@ -38,4 +38,13 @@ public class ProductService {
                 .toList();
 
     }
+
+    public ProductService(){
+        products.add(new DigitalProduct(
+                nextId++, "Clean Code (E-Book)", 29.99,
+                "/downloads/cleancode.pdf", 4.2));
+        products.add(new PhysicalProduct(
+                nextId++, "27 inch Monitor", 249.99,
+                5.4, "61cm x 41cm x 18cm"));
+    }
 }
